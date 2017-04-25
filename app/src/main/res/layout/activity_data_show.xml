@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/et_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textSize="24sp"
+            android:text="统计图"/>
+
+        <lecho.lib.hellocharts.view.ColumnChartView
+            android:id="@+id/chart_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            >
+        </lecho.lib.hellocharts.view.ColumnChartView>
+
+        <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/selectable_background"
+              android:orientation="vertical" >
+
+
+            <LinearLayout
+                style="?android:attr/buttonBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/list_item_distance"
+                    style="@style/ListItemText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="总距离：5公里"/>
+                <TextView
+                    android:id="@+id/list_item_bs"
+                    style="@style/ListItemText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="总步数：2000步"/>
+                <TextView
+                    android:id="@+id/list_item_time"
+                    style="@style/ListItemText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="总用时：1小时"/>
+                <TextView
+                    android:id="@+id/list_item_kll"
+                    style="@style/ListItemText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="卡路里：200千焦"/>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/list_item_seperator"
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:background="@color/light_grey" />
+
+            <TextView
+                android:id="@+id/list_item_date"
+                style="@style/ListItemText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right|center_vertical"
+                android:paddingRight="20dp"
+                android:text="时间：2017-5-01"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>

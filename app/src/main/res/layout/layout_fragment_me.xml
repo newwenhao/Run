@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="#F0F3F6">
+    <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:background="#F0F3F6">
+        <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="200dp"
+          android:layout_marginBottom="20dp"
+          android:background="@drawable/me"
+          >
+            <TextView
+                android:id="@+id/et_username"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:textColor="@color/nav_gray"
+                android:background="@drawable/bt_shape_50"/>
+        </RelativeLayout>
+
+        <LinearLayout style="@style/wrap_layout" >
+            <!-- 上圆角-->
+            <LinearLayout
+
+                style="@style/top_layout">
+                <TextView
+                    android:id="@+id/et_sport_sum"
+                    style="@style/usertext"
+                    android:text="累计运动时长2小时"
+                    android:textColor="@color/nav_gray"
+                    />
+            </LinearLayout>
+
+            <!-- 分割线 -->
+            <View style="@style/bg_line"/>
+            <!-- 无圆角-->
+            <LinearLayout
+
+                style="@style/mid_layout">
+                <TextView
+                    android:id="@+id/et_kll_sum"
+                    style="@style/usertext"
+                    android:text="累计消耗热量3千卡路里"
+                    android:textColor="@color/nav_gray"/>
+            </LinearLayout>
+
+            <View style="@style/bg_line"/>
+            <!-- 下圆角-->
+            <LinearLayout
+                android:id="@+id/ll_run_record"
+                style="@style/bottom_layout">
+                <TextView style="@style/usertext" android:text="跑步记录" />
+                <ImageView style="@style/img_arrow"/>
+            </LinearLayout>
+
+            <View style="@style/bg_line"/>
+            <LinearLayout
+                android:id="@+id/ll_climb_record"
+                android:visibility="gone"
+                style="@style/bottom_layout">
+                <TextView style="@style/usertext" android:text="爬山记录" />
+                <ImageView style="@style/img_arrow"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- 全圆角-->
+        <LinearLayout
+            style="@style/wrap_layout">
+            <LinearLayout style="@style/single_layout" android:id="@+id/ll_clear_data">
+                <TextView style="@style/usertext" android:text="清空数据"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- 全圆角-->
+        <LinearLayout
+            style="@style/wrap_layout">
+            <LinearLayout style="@style/single_layout" android:id="@+id/ll_exit">
+                <TextView style="@style/usertext" android:text="退出系统"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

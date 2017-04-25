@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:background="@drawable/radius_bg"
+              android:padding="15dp">
+    <TextView
+        android:id="@+id/Card_Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="text"
+        android:textIsSelectable="true"/>
+
+    <View
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@color/nav_gray"/>
+    <TextView
+        android:id="@+id/Card_Title_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textColor="#f0f"
+        android:text="text"
+        android:textIsSelectable="true"
+        android:padding="10dp"/>
+
+</LinearLayout>
